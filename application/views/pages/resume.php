@@ -36,7 +36,7 @@
         <hr>
 
         <div class="card-body">
-            <div class="left-side" style="background-color: #fff5e7;">
+            <div class="left-side" >
                 <div>
                     <img src="assets/images/baseline_school_black_18dp.png" alt="education" class="icons">
                     <h4>EDUCATION</h4>
@@ -88,9 +88,6 @@
                 </div>
 
             </div>
-
-            <!-- <img src="assets/images/baseline_facebook_black_18dp.png" alt="experience" class="icons"> 
-            <p>ziekind</p> -->
         </div>
 
         <hr>
@@ -99,6 +96,10 @@
 
 
     <style>
+        body {
+            background-image: linear-gradient(to top, #580360, #55002f, #3d070f, #240c00, #040302);
+        }
+
         .style {
             background-color: #ee495d;
         }
@@ -141,7 +142,7 @@
             height: 20rem;
             margin-left: 20rem;
             margin-top: 0rem;
-            background-color: #ee495d;
+            background-color: black;
             width: 0;
         }
 
@@ -169,6 +170,7 @@
         .left-side {
             float: left;
             width: 18rem;
+            background-color: #495d;
             margin-left: 1rem;
         }
 

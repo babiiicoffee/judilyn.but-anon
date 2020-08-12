@@ -14,14 +14,20 @@ class Pages extends CI_Controller
 
                 $this->load->view('templates/header', $data);
                 $this->load->view('pages/' . $page, $data); // homepage
-                // $this->load->view('pages/aboutme');
+                $this->load->view('pages/resume');
                 $this->load->view('templates/footer', $data);
         }
 
         public function contact($page = 'home')
         {
+                if (!file_exists(APPPATH . 'views/pages/' . $page . '.php')) {
+                        // Whoops, we don't have a page for that!
+                        show_404();
+                        // $this->load->view('error404/error404.php');
+                }
+
+                $data['title'] = ucfirst($page); // Capitalize the first letter
                 # code...
-                $data['title'] = ucfirst($page);
 
                 $this->load->view('templates/header', $data);
                 $this->load->view('pages/' . $page, $data); // homepage
@@ -31,8 +37,14 @@ class Pages extends CI_Controller
 
         public function aboutme($page = 'home')
         {
+                if (!file_exists(APPPATH . 'views/pages/' . $page . '.php')) {
+                        // Whoops, we don't have a page for that!
+                        show_404();
+                        // $this->load->view('error404/error404.php');
+                }
+
+                $data['title'] = ucfirst($page); // Capitalize the first letter
                 # code...
-                $data['title'] = ucfirst($page);
 
                 $this->load->view('templates/header', $data);
                 $this->load->view('pages/' . $page, $data); // homepage
@@ -42,8 +54,21 @@ class Pages extends CI_Controller
 
         public function hobbies($page = 'home')
         {
+                if (!file_exists(APPPATH . 'views/pages/' . $page . '.php')) {
+                        // Whoops, we don't have a page for that!
+                        show_404();
+                        // $this->load->view('error404/error404.php');
+                }
+
+                $data['title'] = ucfirst($page); // Capitalize the first letter
+                if (!file_exists(APPPATH . 'views/pages/' . $page . '.php')) {
+                        // Whoops, we don't have a page for that!
+                        show_404();
+                        // $this->load->view('error404/error404.php');
+                }
+
+                $data['title'] = ucfirst($page); // Capitalize the first letter
                 # code...
-                $data['title'] = ucfirst($page);
 
                 $this->load->view('templates/header', $data);
                 $this->load->view('pages/' . $page, $data); // homepage
@@ -53,8 +78,14 @@ class Pages extends CI_Controller
 
         public function project($page = 'home')
         {
+                if (!file_exists(APPPATH . 'views/pages/' . $page . '.php')) {
+                        // Whoops, we don't have a page for that!
+                        show_404();
+                        // $this->load->view('error404/error404.php');
+                }
+
+                $data['title'] = ucfirst($page); // Capitalize the first letter
                 # code...
-                $data['title'] = ucfirst($page);
 
                 $this->load->view('templates/header', $data);
                 $this->load->view('pages/' . $page, $data); // homepage
@@ -64,8 +95,14 @@ class Pages extends CI_Controller
 
         public function resume($page = 'home')
         {
+                if (!file_exists(APPPATH . 'views/pages/' . $page . '.php')) {
+                        // Whoops, we don't have a page for that!
+                        show_404();
+                        // $this->load->view('error404/error404.php');
+                }
+
+                $data['title'] = ucfirst($page); // Capitalize the first letter
                 # code...
-                $data['title'] = ucfirst($page);
 
                 $this->load->view('templates/header', $data);
                 $this->load->view('pages/' . $page, $data); // homepage

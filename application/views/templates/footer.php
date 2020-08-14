@@ -37,5 +37,12 @@
                 color: violet;
                 letter-spacing: 5px;
                 font-size: 10;
+                font-family: 'Poppins', sans-serif;
         }
+
+::selection {
+    color: #F73AC8;
+    background: black;
+    border-radius: 100px;
+}
 </style>

@@ -13,118 +13,62 @@ class Pages extends CI_Controller
                 $data['title'] = ucfirst($page); // Capitalize the first letter
 
                 $this->load->view('templates/header', $data);
-                $this->load->view('pages/' . $page, $data); // homepage
-                $this->load->view('pages/resume');
+                $this->load->view('pages/' . $page); 
                 $this->load->view('templates/footer', $data);
         }
 
-        public function contact($page = 'home')
+        public function contact($page = 'contact')
         {
-                if (!file_exists(APPPATH . 'views/pages/' . $page . '.php')) {
-                        // Whoops, we don't have a page for that!
-                        show_404();
-                        // $this->load->view('error404/error404.php');
-                }
 
                 $data['title'] = ucfirst($page); // Capitalize the first letter
                 # code...
 
                 $this->load->view('templates/header', $data);
-                $this->load->view('pages/' . $page, $data); // homepage
-                $this->load->view('pages/contact');
+                $this->load->view('pages/' . $page);
                 $this->load->view('templates/footer', $data);
         }
 
-        public function aboutme($page = 'home')
+        public function aboutme($page = 'aboutme')
         {
-                if (!file_exists(APPPATH . 'views/pages/' . $page . '.php')) {
-                        // Whoops, we don't have a page for that!
-                        show_404();
-                        // $this->load->view('error404/error404.php');
-                }
 
                 $data['title'] = ucfirst($page); // Capitalize the first letter
                 # code...
 
                 $this->load->view('templates/header', $data);
-                $this->load->view('pages/' . $page, $data); // homepage
-                $this->load->view('pages/aboutme');
+                $this->load->view('pages/' . $page);
                 $this->load->view('templates/footer', $data);
         }
 
-        public function hobbies($page = 'home')
+        public function hobbies($page = 'hobbies')
         {
-                if (!file_exists(APPPATH . 'views/pages/' . $page . '.php')) {
-                        // Whoops, we don't have a page for that!
-                        show_404();
-                        // $this->load->view('error404/error404.php');
-                }
-
-                $data['title'] = ucfirst($page); // Capitalize the first letter
-                if (!file_exists(APPPATH . 'views/pages/' . $page . '.php')) {
-                        // Whoops, we don't have a page for that!
-                        show_404();
-                        // $this->load->view('error404/error404.php');
-                }
 
                 $data['title'] = ucfirst($page); // Capitalize the first letter
                 # code...
 
                 $this->load->view('templates/header', $data);
-                $this->load->view('pages/' . $page, $data); // homepage
-                $this->load->view('pages/hobbies');
+                $this->load->view('pages/' . $page);
                 $this->load->view('templates/footer', $data);
         }
 
-        public function project($page = 'home')
+        public function project($page = 'project')
         {
-                if (!file_exists(APPPATH . 'views/pages/' . $page . '.php')) {
-                        // Whoops, we don't have a page for that!
-                        show_404();
-                        // $this->load->view('error404/error404.php');
-                }
+                $data['title'] = ucfirst($page); // Capitalize the first letter
+                # code...
+
+                $this->load->view('templates/header', $data);
+                $this->load->view('pages/' . $page);
+                $this->load->view('templates/footer', $data);
+        }
+
+        public function resume($page = 'resume')
+        {
 
                 $data['title'] = ucfirst($page); // Capitalize the first letter
                 # code...
 
                 $this->load->view('templates/header', $data);
-                $this->load->view('pages/' . $page, $data); // homepage
-                $this->load->view('pages/project');
+                $this->load->view('pages/' . $page); 
                 $this->load->view('templates/footer', $data);
         }
 
-        public function resume($page = 'home')
-        {
-                if (!file_exists(APPPATH . 'views/pages/' . $page . '.php')) {
-                        // Whoops, we don't have a page for that!
-                        show_404();
-                        // $this->load->view('error404/error404.php');
-                }
-
-                $data['title'] = ucfirst($page); // Capitalize the first letter
-                # code...
-
-                $this->load->view('templates/header', $data);
-                $this->load->view('pages/' . $page, $data); // homepage
-                $this->load->view('pages/resume');
-                $this->load->view('templates/footer', $data);
-        }
-
-
-        // public function hobbies($page = 'hobbies')
-        // {
-        //         # code...
-        //         $this->load->view('pages/home');
-        //         $this->load->view('page/' . $page);
-        //         $this->load->view('templates/footer');
-        // }
-
-        // public function aboutme($page = 'aboutme')
-        // {
-        //         # code...
-        //         $this->load->helper('url');
-        //         $this->load->view('pages/home');
-        //         $this->load->view('page/' . $page);
-        //         $this->load->view('templates/footer');
-        // }
 }

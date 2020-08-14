@@ -11,6 +11,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="<?php echo $this->config->base_url(); ?>" />
 </head>
 <body>
   
@@ -23,7 +24,8 @@
     font-family: Poppins;
     color: #F73AC8;
     /* background-image: linear-gradient(to bottom, #9b0b76, #a60752, #a32434, #963b1b, #834d08); */
-    background-image: linear-gradient(to top, #580360, #55002f, #3d070f, #240c00, #040302);
+    /* background-image: linear-gradient(to top, #580360, #55002f, #3d070f, #240c00, #040302); */
+    background-image: linear-gradient(to bottom, #9b0b76, #a60752, #a32434, #963b1b, #834d08);
     font-family: 'Poppins', sans-serif;
     background-repeat: no-repeat;
     background-attachment: fixed;

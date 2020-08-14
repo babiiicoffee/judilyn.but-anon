@@ -65,3 +65,6 @@ $route['aboutme'] = "pages/aboutme";
 // $route['pages/(:any)'] = 'pages/view/$1';
 // $route['NavagationController/(:any)'] = 'navigate/aboutme/$1';
 // $route['navagationcontroller'] = 'navigate';
+
+$route['send-email'] = 'EmailController';
+$route['email'] = 'EmailController/send';
